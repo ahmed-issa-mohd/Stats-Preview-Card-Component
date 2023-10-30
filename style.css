@@ -1,10 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
+
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
+
 body {
   display: flex;
   justify-content: center;
@@ -16,28 +18,34 @@ body {
   color: #ffffff;
   background-color: hsl(233, 47%, 7%);
 }
+
 ul {
   list-style: none;
 }
+
 .overlay {
   height: 100%;
   background-color: hsl(277deg, 100%, 50%, 0.42);
 }
+
 .overlay-2 {
   height: 100%;
   background-color: hsl(293deg, 42%, 35%, 0.24);
   mix-blend-mode: color-burn;
 }
+
 /* Local Style */
 #card {
   display: flex;
 }
+
 #card-desc {
   background: hsl(244, 38%, 16%);
   flex-basis: 570px;
   padding: 70px;
   border-radius: 8px 0 0 8px;
 }
+
 #card-img {
   flex-basis: 540px;
   background: url(images/image-header-desktop.jpg) no-repeat top left/100% 100%;
@@ -63,6 +71,7 @@ ul {
 #card-desc .accent {
   color: hsl(277, 64%, 61%);
 }
+
 #card-desc p {
   line-height: 25px;
   font-weight: 400;
@@ -72,35 +81,42 @@ ul {
 #stats li {
   margin-bottom: 25px;
 }
+
 #stats h3 {
   color: hsl(0, 0%, 100%);
   font-weight: 700;
   font-size: 24px;
   margin-bottom: 10px;
 }
+
 #stats h5 {
   color: hsla(0, 0%, 100%, 0.6);
   line-height: 25px;
   font-size: 12px;
   letter-spacing: 1px;
 }
+
 @media screen and (max-width: 625px) {
   #card {
     display: flex;
     flex-direction: column-reverse;
     max-width: 326px;
+    margin-top: 100px;
   }
+
   #card-desc {
     padding: 30px 40px;
     text-align: center;
     flex-basis: auto;
     border-radius: 0 0 8px 8px;
   }
+
   #card-desc h1 {
     font-size: 28px;
     line-height: 32px;
     margin-bottom: 16px;
   }
+
   #card-desc p {
     margin-bottom: 40px;
   }
@@ -112,6 +128,7 @@ ul {
     flex-basis: auto;
     border-radius: 8px 8px 0 0;
   }
+
   #stats {
     margin-right: 0;
     flex-direction: column;
